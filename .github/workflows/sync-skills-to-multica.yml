@@ -67,5 +67,5 @@ jobs:
             echo "Importing ${skill_dir} from ${SOURCE_COMMIT}"
             multica skill import \
               --url "${import_url}" \
-              --on-conflict fail
+              --on-conflict overwrite
           done
